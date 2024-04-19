@@ -16,17 +16,21 @@ theKBDLayout theSecondKBDLayout; in
       enable = true;
       autoNumlock = true;
       wayland.enable = true;
-      theme = "tokyo-night-sddm";
+      #theme = "tokyo-night-sddm";
+      theme = "catppuccin-mocha";
   };
 
 
   environment.systemPackages =
-let
+  let
+    sddm-catppuccin = pkgs.callPackage ../pkgs/sddm-catppuccin.nix {};
     sugar = pkgs.callPackage ../pkgs/sddm-sugar-dark.nix {};
     tokyo-night = pkgs.libsForQt5.callPackage ../pkgs/sddm-tokyo-night.nix {};
 in [ 
     sugar.sddm-sugar-dark # Name: sugar-dark
     tokyo-night # Name: tokyo-night-sddm
+    sddm-catppuccin
     pkgs.libsForQt5.qt5.qtgraphicaleffects
+    pkgs.qt6.full
   ];
 }
