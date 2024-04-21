@@ -18,6 +18,7 @@
     ./swaync.nix
     ./zeroad.nix
     ./zsh.nix
+    ./tmux.nix
 
     # Place Home Files Like Pictures
     ./files.nix
