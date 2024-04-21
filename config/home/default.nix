@@ -22,4 +22,5 @@
     # Place Home Files Like Pictures
     ./files.nix
   ];
+  programs.home-manager.enable = true;
 }
