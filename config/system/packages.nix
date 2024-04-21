@@ -17,7 +17,7 @@
     geekbench powertop undervolt vscode gh tmux fzf tldr bat intel-gpu-tools
     android-tools zoxide yazi libreoffice-qt
     nmap qtcreator obsidian docker ansible
-    modemmanager remmina cmake
+    modemmanager remmina cmake fd
     
     #linuxKernel.packages.linux_xanmod_latest.phc-intel
 

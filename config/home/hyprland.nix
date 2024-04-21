@@ -122,7 +122,7 @@ in with lib; {
         new_is_master = true
       }
       bind = ${modifier},Return,exec,${terminal}
-      bind = ${modifier}SHIFT,Return,exec,rofi-launcher
+      bind = ${modifier},exec,rofi-launcher
       bind = ${modifier}SHIFT,W,exec,web-search
       bind = ${modifier}SHIFT,N,exec,swaync-client -rs
       ${if browser == "google-chrome" then ''
@@ -183,7 +183,7 @@ in with lib; {
       bind = ${modifier}SHIFT,8,movetoworkspace,8
       bind = ${modifier}SHIFT,9,movetoworkspace,9
       bind = ${modifier}SHIFT,0,movetoworkspace,10
-      bind = ${modifier}CONTROL,right,workspace,e+1
+      bind = ${modifier}CONTROL,right,workspace,e+1e
       bind = ${modifier}CONTROL,left,workspace,e-1
       bind = ${modifier},mouse_down,workspace, e+1
       bind = ${modifier},mouse_up,workspace, e-1
