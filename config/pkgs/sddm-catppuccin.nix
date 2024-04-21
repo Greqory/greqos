@@ -1,15 +1,20 @@
-{ stdenv, fetchurl }:
+{ stdenv, fetchFromGitHub }:
 {
   sddm-catppuccin = stdenv.mkDerivation rec {
-    name = "sddm-catppuccin";
-    src = fetchurl {
-      url = "https://github.com/catppuccin/sddm/releases/download/v1.0.0/catppuccin-mocha.zip";
-      hash = "";
+    pname = "sddm-catppuccin";
+    version = "1.0";
+    dontBuild = true;
+
+    src = fetchFromGitHub {
+      owner = "catppuccin";
+      repo = "sddm";
+      rev = "v${version}";
+      sha256 = "";
     };
 
     installPhase = ''
-      mkdir -p $out
-      cp -aR $src $out/share/sddm/themes/catppuccin-mocha
+      mkdir -p $out/share/sddm/themes
+      cp -aR $src $out/share/sddm/themes/catppuccin
     '';
   };
 }

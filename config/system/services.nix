@@ -2,7 +2,7 @@
 
 {
   # List services that you want to enable:
-  services.openssh.enable = true;
+  services.openssh.enable = false;
   services.fstrim.enable = true;
   xdg.portal = {
     enable = true;
@@ -54,4 +54,5 @@
       auth include login
     '';
   };
+  systemd.services.ModemManager.enable = true;
 }

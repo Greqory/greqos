@@ -53,7 +53,7 @@ in {
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
   cpuType = "intel";
-  gpuType = "intel-nvidia";
+  gpuType = "intel";
 
   # Nvidia Hybrid Devices
   # ONLY NEEDED FOR HYBRID

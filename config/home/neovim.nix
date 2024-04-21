@@ -81,7 +81,10 @@ in {
 	  };
 	  nixd.enable = true;
 	  html.enable = true;
-	  ccls.enable = true;
+          ccls = {
+            enable = false;
+          };
+          clangd.enable = true;
 	  cmake.enable = true;
 	  csharp-ls.enable = true;
 	  cssls.enable = true;

@@ -29,8 +29,9 @@ theKBDLayout theSecondKBDLayout; in
 in [ 
     sugar.sddm-sugar-dark # Name: sugar-dark
     tokyo-night # Name: tokyo-night-sddm
-    sddm-catppuccin
+    #sddm-catppuccin
     pkgs.libsForQt5.qt5.qtgraphicaleffects
     pkgs.qt6.full
+    pkgs.qt6.qtsvg
   ];
 }

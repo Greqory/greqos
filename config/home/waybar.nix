@@ -15,7 +15,7 @@ in with lib; {
 
       modules-center = [ "hyprland/workspaces" ] ;
       modules-left = [ "custom/startmenu" "hyprland/window" "pulseaudio" "cpu" "memory"];
-      modules-right = [ "custom/hyprbindings" "custom/exit" "idle_inhibitor" "custom/themeselector" "custom/notification" "battery" "clock" "tray" ];
+      modules-right = [ "custom/hyprbindings" "custom/exit" "idle_inhibitor" "custom/notification" "battery" "clock" "tray" ];
 
       "hyprland/workspaces" = {
       	format = if bar-number == true then "{name}" else "{icon}";
@@ -79,11 +79,6 @@ in with lib; {
           default = ["" "" ""];
         };
         on-click = "sleep 0.1 && pavucontrol";
-      };
-      "custom/themeselector" = {
-        tooltip = false;
-        format = "";
-        on-click = "sleep 0.1 && theme-selector";
       };
       "custom/exit" = {
         tooltip = false;
@@ -313,13 +308,6 @@ in with lib; {
 	margin: 4px;
 	padding: 2px 10px;
 	border-radius: 10px;
-      }
-      #custom-themeselector {
-    	color: #${palette.base0D};
-	background: #${palette.base01};
-	margin: 4px 0px;
-	padding: 2px 10px 2px 5px;
-	border-radius: 0px 10px 10px 0px;
       }
       #custom-startmenu {
     	color: #${palette.base00};
