@@ -8,18 +8,18 @@
     baseIndex = 1;
     clock24 = true;
     mouse = true;
-    prefix = "C-space";
+    prefix = "C-Space";
+    keyMode = "vi";
 
     plugins = with pkgs;
       [
         tmuxPlugins.better-mouse-mode
-        #tmuxPlugins.tmux-nvim
         tmuxPlugins.yank
         # must be before continuum edits right status bar
         { 
           plugin = tmuxPlugins.catppuccin;
           extraConfig = '' 
-          set -g @catppuccin_flavour 'frappe'
+          set -g @catppuccin_flavour 'mocha'
           set -g @catppuccin_window_tabs_enabled on
           set -g @catppuccin_date_time "%H:%M"
           '';
