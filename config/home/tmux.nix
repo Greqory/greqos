@@ -13,7 +13,7 @@
     plugins = with pkgs;
       [
         tmuxPlugins.better-mouse-mode
-        tmux-nvim
+        tmuxPlugins.tmux-nvim
         tmuxPlugins.yank
         # must be before continuum edits right status bar
         { 
