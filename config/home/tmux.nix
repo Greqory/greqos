@@ -5,10 +5,16 @@
     shell = "${pkgs.zsh}/bin/zsh";
     terminal = "tmux-256color";
     historyLimit = 100000;
+    baseIndex = 1;
+    clock24 = true;
+    mouse = true;
+    prefix = "C-space";
+
     plugins = with pkgs;
       [
         tmuxPlugins.better-mouse-mode
-
+        tmux-nvim
+        tmuxPlugins.yank
         # must be before continuum edits right status bar
         { 
           plugin = tmuxPlugins.catppuccin;
@@ -37,6 +43,7 @@
       ];
 
     extraConfig = ''
+      
     '';
   };
 }
