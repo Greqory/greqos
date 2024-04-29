@@ -18,7 +18,7 @@
     android-tools zoxide yazi libreoffice-qt
     nmap qtcreator obsidian docker ansible
     modemmanager remmina cmake fd
-    telegram-desktop home-manager  
+    telegram-desktop home-manager  ungoogled-chromium
     #linuxKernel.packages.linux_xanmod_latest.phc-intel
 
   ];
