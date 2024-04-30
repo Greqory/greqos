@@ -19,8 +19,9 @@
     nmap qtcreator obsidian docker ansible
     modemmanager remmina cmake fd
     telegram-desktop home-manager  ungoogled-chromium
+    vmware-workstation
     #linuxKernel.packages.linux_xanmod_latest.phc-intel
-
+    linuxKernel.packages.linux_xanmod_latest.vmware
   ];
 
   programs = {
