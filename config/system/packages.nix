@@ -1,4 +1,4 @@
-{ pkgs, config, inputs, ... }:
+{ pkgs,  inputs, ... }:
 
 {
   # Allow unfree packages
@@ -19,9 +19,10 @@
     nmap qtcreator obsidian docker ansible
     modemmanager remmina cmake fd
     telegram-desktop home-manager  ungoogled-chromium
-    vmware-workstation
+    #vmware-workstation
     #linuxKernel.packages.linux_xanmod_latest.phc-intel
     linuxKernel.packages.linux_xanmod_latest.vmware
+    rustc rustscan rustcat
   ];
 
   programs = {
