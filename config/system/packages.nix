@@ -22,7 +22,7 @@
     #vmware-workstation
     #linuxKernel.packages.linux_xanmod_latest.phc-intel
     linuxKernel.packages.linux_xanmod_latest.vmware
-    rustc rustscan rustcat
+    rustc rustscan rustcat gcc elf2uf2-rs glibc glib
   ];
 
   programs = {

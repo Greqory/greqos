@@ -22,7 +22,7 @@
     jack.enable = true;
     extraConfig.pipewire-pulse."92-low-latency" = {
       context.modules = [
-        {
+       {
           name = "libpipewire-module-protocol-pulse";
           args = {
             pulse.min.req = "32/48000";
