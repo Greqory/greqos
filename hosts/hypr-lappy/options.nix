@@ -48,7 +48,8 @@ in {
   theLCVariables = "de_DE.UTF-8";
   theTimezone = "Europe/Berlin";
   theShell = "zsh";
-  theKernel = "xanmod"; # possible options: default, latest, lqx, xanmod, zen
+  theKernel = "zen";
+  # theKernel = "xanmod"; # possible options: default, latest, lqx, xanmod, zen
   sdl-videodriver = "wayland"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType

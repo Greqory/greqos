@@ -100,11 +100,6 @@ in with lib; {
             ignore_opacity = on
         }
       }
-      plugin {
-        hyprtrails {
-          color = rgba(${theme.base0A}ff)
-        }
-      }
       exec-once = $POLKIT_BIN
       exec-once = dbus-update-activation-environment --systemd --all
       exec-once = systemctl --user import-environment QT_QPA_PLATFORMTHEME WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
@@ -117,9 +112,6 @@ in with lib; {
       dwindle {
         pseudotile = true
         preserve_split = true
-      }
-      master {
-        new_is_master = true
       }
       bind = ${modifier},Return,exec,${terminal}
       bind = ${modifier}SHIFT,Return,exec,rofi-launcher
