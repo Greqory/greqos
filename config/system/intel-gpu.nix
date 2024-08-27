@@ -10,7 +10,7 @@ lib.mkIf ("${gpuType}" == "intel") {
   };
 
   # OpenGL
-  hardware.opengl = {
+  hardware.grafics = {
     extraPackages = with pkgs; [
       intel-media-driver
       #vaapiIntel

@@ -6,8 +6,8 @@ let
 in {
   # Install Packages For The User
   home.packages = with pkgs; [
-    pkgs."${browser}" discord libvirt swww grim slurp gnome.file-roller
-    swaynotificationcenter rofi-wayland imv transmission-gtk mpv
+    pkgs."${browser}" discord libvirt swww grim slurp file-roller
+    swaynotificationcenter rofi-wayland imv transmission_3-gtk mpv
     gimp rustup audacity pavucontrol tree protonup-qt
     font-awesome spotify swayidle neovide swaylock
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
