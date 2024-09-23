@@ -22,7 +22,7 @@
     #vmware-workstation
     #linuxKernel.packages.linux_xanmod_latest.phc-intel
     #linuxKernel.packages.linux_xanmod_latest.vmware
-    rustc rustscan rustcat gcc elf2uf2-rs glibc glib glibc
+    rustc rustscan rustcat gcc elf2uf2-rs glibc glib glibc_multi
     dbus c-periphery python3Full gob2 python311Packages.pygobject3 gobject-introspection python311Packages.wheel
     jetbrains.pycharm-community dia pipx
   ];
