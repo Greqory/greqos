@@ -23,7 +23,7 @@
     #linuxKernel.packages.linux_xanmod_latest.phc-intel
     #linuxKernel.packages.linux_xanmod_latest.vmware
     rustc rustscan rustcat gcc elf2uf2-rs glibc glib glibc_multi gdb 
-    python312Packages.pyserial minicom picoterm
+    python312Packages.pyserial picoterm
     doxygen gccMultiStdenv openocd
     libstdcxx5 gcc_multi gcc-arm-embedded libgcc mkspiffs-presets.esp-idf esptool qemu newlib binutils
     dbus c-periphery python3Full gob2 python311Packages.pygobject3 gobject-introspection python311Packages.wheel
