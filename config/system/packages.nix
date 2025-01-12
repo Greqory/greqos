@@ -15,6 +15,7 @@
     networkmanagerapplet yad playerctl nh
     # own packages:
     geekbench powertop undervolt vscode gh tmux fzf tldr bat intel-gpu-tools
+    ncdu
     android-tools zoxide yazi libreoffice-qt
     nmap obsidian docker ansible
     modemmanager remmina cmake fd
