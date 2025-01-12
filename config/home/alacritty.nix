@@ -21,7 +21,7 @@ in lib.mkIf (alacritty == true) {
 	  blinking = "On";
 	};
       };
-      live_config_reload = true;
+      general.live_config_reload = true;
       font = {
 	normal.family = "JetBrainsMono NFM";
 	bold.family = "JetBrainsMono NFM";
