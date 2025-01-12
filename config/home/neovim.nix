@@ -47,6 +47,7 @@ in {
     };
     
     plugins = {
+      web-devicons.enable = true;
       barbecue.enable = true;
       gitsigns.enable = true;
       telescope = {
@@ -57,7 +58,7 @@ in {
 	};
       };
       indent-blankline.enable = true;
-      nvim-colorizer.enable = true;
+      colorizer.enable = true;
       nvim-autopairs.enable = true;
       nix.enable = true;
       comment.enable = true;
@@ -71,10 +72,10 @@ in {
       lsp = {
 	enable = true;
 	servers = {
-	  tsserver.enable = true;
-	  lua-ls.enable = true;
+          ts_ls.enable = true;
+	  lua_ls.enable = true;
 	  bashls.enable = true;
-	  rust-analyzer = {
+	  rust_analyzer = {
 	    enable = true;
 	    installRustc = true;
 	    installCargo = true;
@@ -86,7 +87,7 @@ in {
           };
           clangd.enable = true;
 	  cmake.enable = true;
-	  csharp-ls.enable = true;
+	  csharp_ls.enable = true;
 	  cssls.enable = true;
 	  gopls.enable = true;
 	  jsonls.enable = true;
