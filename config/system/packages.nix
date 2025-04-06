@@ -6,7 +6,7 @@
 
   # List System Programs
   environment.systemPackages = with pkgs; [
-    wget curl git cmatrix lolcat neofetch htop btop libvirt
+    wget curl git cmatrix lolcat btop libvirt
     polkit_gnome lm_sensors unzip unrar libnotify eza
     v4l-utils ydotool wl-clipboard socat cowsay lsd lshw
     pkg-config meson hugo gnumake ninja go nodejs 
@@ -15,7 +15,7 @@
     networkmanagerapplet yad playerctl nh
     # own packages:
     geekbench powertop undervolt vscode gh tmux fzf tldr bat intel-gpu-tools
-    ncdu
+    ncdu fastfetch vivaldi zed
     android-tools zoxide yazi libreoffice-qt
     nmap obsidian docker ansible
     modemmanager remmina cmake fd
